@@ -54,8 +54,8 @@ import type {
         providers: [
       GoogleProvider({
         clientId:
-          "1001501182863-7scpgm229vsc87dvn350klcg117hm9ab.apps.googleusercontent.com",
-        clientSecret: "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",
+          "1001501182863-um2t1v6rivrcoflb9b4n7bc2q1nc6lp0.apps.googleusercontent.com",
+        clientSecret: "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",
       }),
     ],
     callbacks: {
