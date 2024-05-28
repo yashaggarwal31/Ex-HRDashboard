@@ -1,0 +1,17 @@
+[
+  {
+    "id": "Tickets",
+    "type": "Resolved",
+    "value": 0
+  },
+  {
+    "id": "Surveys",
+    "type": "Responses",
+    "value": 1
+  },
+  {
+    "id": "Feedback",
+    "type": "Reviewed",
+    "value": 2
+  }
+]
