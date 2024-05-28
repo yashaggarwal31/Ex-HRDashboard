@@ -1,8 +1,11 @@
 import { getSession, signOut } from 'next-auth/react';
 import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const ProfileIcon = () => {
+  const router = useRouter();
+
   const [user, setUser] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -15,6 +18,10 @@ const ProfileIcon = () => {
     }
     getUser();
   }, []);
+
+  useEffect(()=>{
+    if(!user) router.push('/login')
+  },[user])
 
   useEffect(() => {
     function handleClickOutside(event) {
