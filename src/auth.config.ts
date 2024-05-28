@@ -53,9 +53,8 @@ import type {
   export const config = {
         providers: [
       GoogleProvider({
-        clientId:
-          "1001501182863-um2t1v6rivrcoflb9b4n7bc2q1nc6lp0.apps.googleusercontent.com",
-        clientSecret: "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",
+        clientId: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_SECRET,
       }),
     ],
     callbacks: {

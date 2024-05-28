@@ -13,15 +13,16 @@ const ProfileIcon = () => {
   useEffect(() => {
     async function getUser() {
       const session = await getSession();
-      console.log('client side session: ', session);
-      setUser(session.user);
+      if(!session) router.push('/login')
+      // console.log('client side session: ', session);
+      setUser(session?.user);
     }
     getUser();
   }, []);
 
-  useEffect(()=>{
-    if(!user) router.push('/login')
-  },[user])
+  // useEffect(()=>{
+  //   if(!user) router.push('/login')
+  // },[user])
 
   useEffect(() => {
     function handleClickOutside(event) {
