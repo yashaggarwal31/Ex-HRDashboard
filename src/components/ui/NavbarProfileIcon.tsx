@@ -13,7 +13,7 @@ const ProfileIcon = () => {
   useEffect(() => {
     async function getUser() {
       const session = await getSession();
-      if(!session) router.push('/login')
+      // if(!session) router.push('/login')
       // console.log('client side session: ', session);
       setUser(session?.user);
     }
