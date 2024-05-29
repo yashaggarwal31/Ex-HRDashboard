@@ -135,7 +135,7 @@ export default function FormFiller({ surveyFields, title, survey_img, surveyID, 
     const formDataJSON = JSON.stringify(formDataArray);
 
     const surveyResponse = {
-      user_id: userId,
+      user_id: userId?userId:null,
       survey_id: parseInt(surveyID),
       response_data: formDataJSON
     }

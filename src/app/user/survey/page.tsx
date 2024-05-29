@@ -25,6 +25,10 @@ async function UserSurveys(){
   // const userID = session.user.id;
 
     const surveyData = await getUserSurveys(userId);
+    if(surveyData==null){
+      return <div>Error Occured</div>
+    }
+
     // console.log('users page, survey data: ',surveyData)
 
     

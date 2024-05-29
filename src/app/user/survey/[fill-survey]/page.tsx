@@ -52,7 +52,7 @@ async function SurveyForm({surveyID}){
     const survey_img = surveyData[0].survey_img;
 
     return <>
-    <FormFiller surveyFields={formFields} title={title} survey_img={survey_img} surveyID={surveyID} userId={userId}/>
+    <FormFiller surveyFields={formFields} title={title} survey_img={survey_img} surveyID={surveyID} userId={userId?userId:null}/>
     </>
 
 }

@@ -41,6 +41,7 @@ export async function getRecentSurveys () {
 }
 
 export async function getUserSurveys (userID) {
+  if (userID == null) return null
   const client = await dbConnect()
 
   const userId = await getUserIdFromClerkId(userID)
