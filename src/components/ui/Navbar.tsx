@@ -71,20 +71,20 @@ const Navbar: React.FC = () => {
                         href="/user/ticket"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Tickets
+                        Ticket
                       </Link>
                       <Link
                         href="/user/feedback"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Feedbacks
+                        Feedback
                       </Link>
 
                       <Link
                         href="/user/survey"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
                       >
-                        Surveys
+                        Survey
                       </Link>
                     </>
                   ) : (
@@ -99,26 +99,26 @@ const Navbar: React.FC = () => {
                         href="/admin/ticket"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Tickets
+                        Ticket
                       </Link>
                       <Link
                         href="/admin/feedback"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Feedbacks
+                        Feedback
                       </Link>
 
                       <Link
                         href="/admin/survey"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Surveys
+                        Survey
                       </Link>
                       <Link
                         href="/admin/manage-users"
                         className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                       >
-                        Manange Users
+                        Manage Users
                       </Link>
                     </>
                   )}
