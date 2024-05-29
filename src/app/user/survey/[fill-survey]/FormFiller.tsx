@@ -59,7 +59,7 @@ export default function FormFiller({ surveyFields, title, survey_img, surveyID, 
 
         // Get the label text associated with the form element
         let label = '';
-        const labelElement = form.querySelector(`label[htmlFor="${element.id}"]`);
+        const labelElement = form.querySelector(`label[htmlFor="${element?.id}"]`);
         console.log('For this element, ', element,'Type is',element.type ,'\n This si the label ', labelElement)
         if (labelElement) {
             label = labelElement.textContent.trim();
@@ -83,31 +83,31 @@ export default function FormFiller({ surveyFields, title, survey_img, surveyID, 
         switch (type) {
             case 'text':
                 answer = element.value;
-                id = element.id;
+                id = element?.id;
                 break;
             case 'checkbox':
                 answer = element.checked ? element.value : null;
                 if (answer === null) continue;
-                else id = element.id; // Skip unchecked checkboxes
+                else id = element?.id; // Skip unchecked checkboxes
                 break;
             case 'select-one':
                 answer = element.options[element.selectedIndex].value;
-                id = element.id;
+                id = element?.id;
                 break;
             case 'file':
                 // For document uploader, collect the file names
                 if(!element.files[0]) continue;
                 answer = element.files[0].name
-                id = element.id;
+                id = element?.id;
                 break;
             case 'date':
                 answer = element.value;
-                id = element.id;
+                id = element?.id;
                 break;
             case 'radio':
                 answer = element.checked ? element.value:null;
                 if(answer===null) continue;
-                else id = element.id;
+                else id = element?.id;
                 break;
             default:
                 break;
