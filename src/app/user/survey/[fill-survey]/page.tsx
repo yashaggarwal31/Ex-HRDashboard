@@ -20,9 +20,9 @@ let surveyID;
 async function SurveyForm({surveyID}){
   const userId = await getGoogleUserId();
 
-  console.log(surveyID)
-  console.log('space')
-  console.log(userId)
+  // console.log(surveyID)
+  // console.log('space')
+  // console.log(userId)
 
   const permission = await checkUserPermissionForSurvey(surveyID, userId);
 

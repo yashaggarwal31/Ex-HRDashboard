@@ -194,7 +194,7 @@ export async function getUserIdFromClerkId (clerkId) {
 }
 
 export async function checkUserPermissionForSurvey (surveyID, userID) {
-  if (userID == null) return notFound()
+  if (userID == null) return false
   const client = await dbConnect()
   const user_id = await getUserIdFromClerkId(userID)
   console.log('permission actual user id: ', user_id)
